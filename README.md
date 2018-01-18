@@ -3,13 +3,13 @@
 
 ### 准备工作
 
-*外网可访问的服务器地址，可利用花生壳代理到本地，方便开发调试（参考[微信后台开发第一步：nodeJS+express接入微信后台详细教程](https://www.cnblogs.com/xuange306/p/4971702.html)）
+* 外网可访问的服务器地址，可利用花生壳代理到本地，方便开发调试（参考[微信后台开发第一步：nodeJS+express接入微信后台详细教程](https://www.cnblogs.com/xuange306/p/4971702.html)）
 
-*测试公众号，可用微信公众平台提供的测试号（[接口测试号申请](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421137522)）
+* 测试公众号，可用微信公众平台提供的测试号（[接口测试号申请](https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1421137522)）
 
-*node v7.6.0以上，koa2依赖async（[koa中文官网](https://koa.bootcss.com/)）
+* node v7.6.0以上，koa2依赖async（[koa中文官网](https://koa.bootcss.com/)）
 
-*把测试公众号的二维码发给你的ta，启动服务后开撩
+* 把测试公众号的二维码发给你的ta，启动服务后开撩
 
 ### 创建项目及初始化
 
@@ -140,12 +140,12 @@ module.exports = (options, app) => {
 
 最后重申一下注意事项：
 
-*调试时记得开启花生壳
+* 调试时记得开启花生壳
 
-*本机的端口号要与内网穿透的端口号匹配上
+* 本机的端口号要与内网穿透的端口号匹配上
 
-*记得把egg的csrf关掉
+* 记得把egg的csrf关掉
 
-*微信后台的各种id、token要跟代码里的对上
+* 微信后台的各种id、token要跟代码里的对上
 
-*在微信后台的“接口配置信息修改”操作时，记得把业务代码先暂时注释掉
+* 在微信后台的“接口配置信息修改”操作时，记得把业务代码先暂时注释掉
