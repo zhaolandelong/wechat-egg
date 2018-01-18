@@ -1,4 +1,5 @@
-# [egg + co-wechat快速搭建微信公众号对接服务](http://blog.csdn.net/zhaolandelong/article/details/79093502)
+# egg + co-wechat快速搭建微信公众号对接服务
+更多内容请见[个人博客](http://blog.csdn.net/zhaolandelong/article/details/79093502)
 
 ### 准备工作
 
@@ -30,7 +31,7 @@ $ open localhost:7001
 
 如果成功看到“hi, egg”就证明启动成功了。这个页面没用，可以关掉，主要是npm run dev可以热重启服务，很方便开发。当然，如果程序报错它是会结束的，这时候还是需要手动重启。
 
-`注：egg启动的默认端口是7001，这个要跟上面提到的花生壳内网穿透匹配上，后面会有用。`
+**注：egg启动的默认端口是7001，这个要跟上面提到的花生壳内网穿透匹配上，后面会有用。**
 
 ### 开始写业务
 
@@ -55,7 +56,7 @@ module.exports = (options, app) => {
 }; 
 ```
 
-因为[co-wechat](https://github.com/node-webot/co-wechat)的调用还是有点跟标准不一样的，只export整个包是不行的，要按如上封装一下（参考使用koa的中间件）。TODO就是业务代码，后面还会把它丰富，并抽离到service。但是！！！！！由于后面还有一步微信验证，所以这里暂时还`不能写任何代码！！！不能写任何代码！！！不能写任何代码！！！`
+因为[co-wechat](https://github.com/node-webot/co-wechat)的调用还是有点跟标准不一样的，只export整个包是不行的，要按如上封装一下（参考使用koa的中间件）。TODO就是业务代码，后面还会把它丰富，并抽离到service。但是！！！！！由于后面还有一步微信验证，所以这里暂时还**不能写任何代码！！！不能写任何代码！！！不能写任何代码！！！**
 
 然后配置一下router，添加两项
 
